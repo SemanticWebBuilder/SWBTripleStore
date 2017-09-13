@@ -22,18 +22,20 @@
  */
 package org.semanticwb.triplestore;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import org.semanticwb.Logger;
+import org.semanticwb.SWBRuntimeException;
+import org.semanticwb.SWBUtils;
+import org.semanticwb.rdf.RGraph;
+
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.graph.TripleMatch;
 import com.hp.hpl.jena.graph.impl.GraphBase;
 import com.hp.hpl.jena.shared.PrefixMapping;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import org.semanticwb.Logger;
-import org.semanticwb.SWBRuntimeException;
-import org.semanticwb.SWBUtils;
-import org.semanticwb.remotetriplestore.RGraph;
 
 /**
  *

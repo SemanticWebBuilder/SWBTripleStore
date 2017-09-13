@@ -22,8 +22,6 @@
  */
 package org.semanticwb.remotetriplestore;
 
-import com.hp.hpl.jena.graph.Triple;
-import com.hp.hpl.jena.rdf.model.Model;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -32,13 +30,19 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+
 import org.semanticwb.Logger;
 import org.semanticwb.SWBPlatform;
 import org.semanticwb.SWBUtils;
 import org.semanticwb.rdf.AbstractStore;
 import org.semanticwb.rdf.GraphCached;
+import org.semanticwb.rdf.RGraph;
+import org.semanticwb.rdf.RTransactionHandler;
 import org.semanticwb.remotetriplestore.protocol.Command;
 import org.semanticwb.triplestore.SWBTSUtil;
+
+import com.hp.hpl.jena.graph.Triple;
+import com.hp.hpl.jena.rdf.model.Model;
 
 /**
  *
